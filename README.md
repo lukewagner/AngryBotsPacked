@@ -10,6 +10,6 @@ STR:
  4. `asmjspack webgl.asm.js webgl.asm` to pack the asm.js file.
  5. Change the loading of `webgl.js` in `index.html` to instead call `unpackAsmJS('webgl.asm')` and, when the returned promise is resolved, store the unpacked asm.js module to the global variable `asmModule` then finally load `webgl-glue.js` to start the app.
 
-Runs in Chrome and Firefox.  (Seems to have black textures on the floors in both browsers on Linux, but that is a pre-existing issue.)
+Runs in Chrome and Firefox.  (Seems to have black textures on the floors in both browsers on Linux/Mac, and Mac has some weird input issue, but both are pre-existing (before asm.js-pack).)
 
 **I realize this should just be an Emscripten flag; one step at a time :)**
