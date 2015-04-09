@@ -1,5 +1,5 @@
 # AngryBotsPacked
-This is a demo of [asm.js-pack](https://github.com/lukewagner/asm.js-pack) applied to the WebGL export of the Unity 5 [AngryBots demo](http://beta.unity3d.com/jonas/AngryBots/).
+This is a <a href="http://lukewagner.github.io/AngryBotsPacked">demo</a> of [asm.js-pack](https://github.com/lukewagner/asm.js-pack) applied to the WebGL export of the Unity 5 [AngryBots demo](http://beta.unity3d.com/jonas/AngryBots/).
 
 STR:
  1. Start with WebGL export of standard AngryBots demo in Unity5
