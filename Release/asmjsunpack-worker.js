@@ -68,9 +68,9 @@ onmessage = function(e) {
   }
   xhr.onload = function (e) {
     try {
-      var bef = performance.now();
+      var bef = Date.now();
       var utf8 = unpack(xhr.response, callbackName);
-      var aft = performance.now();
+      var aft = Date.now();
       console.log("Unpack of " + url + " took " + (aft - bef) + "ms");
       postMessage(utf8, [utf8.buffer]);
     } catch (e) {
