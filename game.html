@@ -63,10 +63,10 @@
 <script src="Release/asmjsunpack.js"></script>
 <script>
   var asmModule;
-  unpackAsmJS('webgl.asm', 'Release/asmjsunpack-worker.js').then(function(unpackedAsmModule) {
+  unpackAsmJS('AngryBots-asm.packed', 'Release/asmjsunpack-worker.js').then(function(unpackedAsmModule) {
     asmModule = unpackedAsmModule;
     var script = document.createElement('script');
-    script.src = "Release/webgl-glue.js";
+    script.src = "Release/AngryBots-glue.js";
     document.body.appendChild(script);
   }, function(reason) {
     console.log("Failed to unpack asm.js: " + reason);

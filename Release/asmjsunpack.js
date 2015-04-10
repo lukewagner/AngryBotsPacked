@@ -28,7 +28,7 @@ var unpackAsmJS = (function() {
         var blob = new Blob([e.data]);
         var script = document.createElement('script');
         var url = URL.createObjectURL(blob);
-        //script.onload = script.onerror = function() { URL.revokeObjectURL(url) }
+        script.onload = script.onerror = function() { URL.revokeObjectURL(url) }
         script.src = url;
         document.body.appendChild(script);
       }
