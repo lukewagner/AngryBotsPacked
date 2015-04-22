@@ -63,7 +63,7 @@
 <script src="Release/asmjsunpack.js"></script>
 <script>
   var asmModule;
-  unpackAsmJS('AngryBots-asm.packed', 'Release/asmjsunpack-worker.js').then(function(unpackedAsmModule) {
+  unpackAsmJS('AngryBots-asm.packed.js', 'Release/asmjsunpack-worker.js').then(function(unpackedAsmModule) {
     asmModule = unpackedAsmModule;
     var script = document.createElement('script');
     script.src = "Release/AngryBots-glue.js";

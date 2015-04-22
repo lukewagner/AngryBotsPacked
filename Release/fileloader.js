@@ -15,8 +15,8 @@ Module.expectedDataFileDownloads++;
       // worker
       PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
     }
-    var PACKAGE_NAME = 'AngryBots.data';
-    var REMOTE_PACKAGE_BASE = 'AngryBots.data';
+    var PACKAGE_NAME = 'AngryBots.data.js';
+    var REMOTE_PACKAGE_BASE = 'AngryBots.data.js';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       Module.printErr('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -154,10 +154,10 @@ Module['FS_createPath']('/', 'Resources', true, true);
           DataRequest.prototype.requests["/sharedassets2.assets"].onload();
           DataRequest.prototype.requests["/Resources/unity_default_resources"].onload();
           DataRequest.prototype.requests["/Resources/unity_builtin_extra"].onload();
-          Module['removeRunDependency']('datafile_AngryBots.data');
+          Module['removeRunDependency']('datafile_AngryBots.data.js');
 
     };
-    Module['addRunDependency']('datafile_AngryBots.data');
+    Module['addRunDependency']('datafile_AngryBots.data.js');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
