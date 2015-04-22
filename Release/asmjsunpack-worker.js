@@ -80,7 +80,7 @@ onmessage = function(e) {
         postMessage("failed to unpack " + url + ": " + e);
       }
     }
-    //self.close();  https://bugzilla.mozilla.org/show_bug.cgi?id=1157284
+    self.close();
   }
   xhr.send(null);
 }
